@@ -1,0 +1,239 @@
+package Bank;
+
+
+import java.util.Scanner;
+
+class Restaurent {
+
+	public static void main(String[] args) {
+		Scanner s= new Scanner(System.in);
+		MenuContent m=new MenuContent();
+		String name;
+		long Phno;
+		System.out.println("Enter the customer name");
+		name=s.nextLine();
+		System.out.println("Enter the Phone Number");
+		Phno=s.nextLong();
+		System.out.println("Welcome to null Restaurant");
+		
+		int a=0;
+		while(a<1) {
+			System.out.println("Slect The Option");
+			System.out.println("1.Oreder");
+			System.out.println("2.Bill");
+			int trans=s.nextInt();
+			if(trans==1) {
+			MenuContent.menu();
+			}
+			else if(trans==2){
+String arrr[]=m.arr;
+				int total=m.tot;
+				System.out.println("			Bill");
+				System.out.println("Name: "+name);
+				System.out.println("Phno: "+Phno);
+				System.out.println("Item			Qty		Total");
+				for(int i=0;i<arrr.length-1;i++) {
+					if(arrr[i].length()>1) {
+						System.out.println(arrr[i]);
+					}
+				}
+				System.out.println("Total amount with GST			"+(total+(total*18/100)));
+				System.out.println("Thank You Visit Again......!");
+				break;
+			}
+		
+		}
+	}	
+}
+class MenuContent{
+	static String arr[]= {"","","","",""};
+	static int tot=0;
+	public static void menu() {
+		Scanner s=new Scanner(System.in);
+		System.out.println("Food for You		Price");
+		System.out.println("1.Chapathi	 	:30/plate");
+		System.out.println("2-Chicken curyy		:120/plate");
+		System.out.println("3.Biriyani		:150/plate");
+		System.out.println("Select the option");
+		int item=s.nextInt();
+		System.out.println("enter the Quantity");
+		int Qty=s.nextInt();
+		bill(item,Qty);
+	}
+	public static void bill(int it,int qt) {
+		int z=0;
+		z=z+qt;	
+		if(it==1) {
+			tot=tot+z*30;
+			arr[1]="Chapathi		"+z+"		"+z*30;
+		}
+		else if(it==2) {
+			tot=tot+z*120;
+			arr[2]="Chicken curry		"+z+"		"+z*120;	
+		}else if(it==3) {
+			tot=tot+z*150;
+			arr[3]="Biriyani		"+z+"		"+z*150;
+		}
+		
+	}
+	
+}
+package Bank;
+
+
+import java.util.Scanner;
+
+class Restaurent {
+
+	public static void main(String[] args) {
+		Scanner s= new Scanner(System.in);
+		MenuContent m=new MenuContent();
+		String name;
+		long Phno;
+		System.out.println("Enter the customer name");
+		name=s.nextLine();
+		System.out.println("Enter the Phone Number");
+		Phno=s.nextLong();
+		System.out.println("Welcome to null Restaurant");
+		
+		int a=0;
+		while(a<1) {
+			System.out.println("Slect The Option");
+			System.out.println("1.Oreder");
+			System.out.println("2.Bill");
+			int trans=s.nextInt();
+			if(trans==1) {
+			MenuContent.menu();
+			}
+			else if(trans==2){
+				String arrr[]=m.arr;
+				int total=m.tot;
+				System.out.println("			Bill");
+				System.out.println("Name: "+name);
+				System.out.println("Phno: "+Phno);
+				System.out.println("Item			Qty		Total");
+				for(int i=0;i<arrr.length-1;i++) {
+					if(arrr[i].length()>1) {
+						System.out.println(arrr[i]);
+					}
+				}
+				System.out.println("Total amount with GST			"+(total+(total*18/100)));
+				System.out.println("Thank You Visit Again......!");
+				break;
+			}
+		
+		}
+	}	
+}
+class MenuContent{
+	static String arr[]= {"","","","",""};
+	static int tot=0;
+	public static void menu() {
+		Scanner s=new Scanner(System.in);
+		System.out.println("Food for You		Price");
+		System.out.println("1.Chapathi	 	:30/plate");
+		System.out.println("2-Chicken curyy		:120/plate");
+		System.out.println("3.Biriyani		:150/plate");
+		System.out.println("Select the option");
+		int item=s.nextInt();
+		System.out.println("enter the Quantity");
+		int Qty=s.nextInt();
+		bill(item,Qty);
+	}
+	public static void bill(int it,int qt) {
+		int z=0;
+		z=z+qt;	
+		if(it==1) {
+			tot=tot+z*30;
+			arr[1]="Chapathi		"+z+"		"+z*30;
+		}
+		else if(it==2) {
+			tot=tot+z*120;
+			arr[2]="Chicken curry		"+z+"		"+z*120;	
+		}else if(it==3) {
+			tot=tot+z*150;
+			arr[3]="Biriyani		"+z+"		"+z*150;
+		}
+		
+	}
+	
+package Bank;
+
+
+import java.util.Scanner;
+
+class Restaurent {
+
+	public static void main(String[] args) {
+		Scanner s= new Scanner(System.in);
+		MenuContent m=new MenuContent();
+		String name;
+		long Phno;
+		System.out.println("Enter the customer name");
+		name=s.nextLine();
+		System.out.println("Enter the Phone Number");
+		Phno=s.nextLong();
+		System.out.println("Welcome to null Restaurant");
+		
+		int a=0;
+		while(a<1) {
+			System.out.println("Slect The Option");
+			System.out.println("1.Oreder");
+			System.out.println("2.Bill");
+			int trans=s.nextInt();
+			if(trans==1) {
+			MenuContent.menu();
+			}
+			else if(trans==2){
+				String arrr[]=m.arr;
+				int total=m.tot;
+				System.out.println("			Bill");
+				System.out.println("Name: "+name);
+				System.out.println("Phno: "+Phno);
+				System.out.println("Item			Qty		Total");
+				for(int i=0;i<arrr.length-1;i++) {
+					if(arrr[i].length()>1) {
+						System.out.println(arrr[i]);
+					}
+				}
+				System.out.println("Total amount with GST			"+(total+(total*18/100)));
+				System.out.println("Thank You Visit Again......!");
+				break;
+			}
+		
+		}
+	}	
+}
+class MenuContent{
+	static String arr[]= {"","","","",""};
+	static int tot=0;
+	public static void menu() {
+		Scanner s=new Scanner(System.in);
+		System.out.println("Food for You		Price");
+		System.out.println("1.Chapathi	 	:30/plate");
+		System.out.println("2-Chicken curyy		:120/plate");
+		System.out.println("3.Biriyani		:150/plate");
+		System.out.println("Select the option");
+		int item=s.nextInt();
+		System.out.println("enter the Quantity");
+		int Qty=s.nextInt();
+		bill(item,Qty);
+	}
+	public static void bill(int it,int qt) {
+		int z=0;
+		z=z+qt;	
+		if(it==1) {
+			tot=tot+z*30;
+			arr[1]="Chapathi		"+z+"		"+z*30;
+		}
+		else if(it==2) {
+			tot=tot+z*120;
+			arr[2]="Chicken curry		"+z+"		"+z*120;	
+		}else if(it==3) {
+			tot=tot+z*150;
+			arr[3]="Biriyani		"+z+"		"+z*150;
+		}
+		
+	}
+	
+
